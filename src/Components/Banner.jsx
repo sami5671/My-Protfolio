@@ -1,7 +1,6 @@
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
-
 import { FaInstagramSquare } from "react-icons/fa";
 
 const Banner = () => {
@@ -52,6 +51,7 @@ const Banner = () => {
       </div>
 
       {/* ----image section */}
+      <img src="" width={290} height={290} className="" alt="" />
     </div>
   );
 };

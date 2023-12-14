@@ -1,0 +1,31 @@
+.service-box {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-icon {
+  font-size: 5rem;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  top: -80%;
+  left: 80%;
+  transform: translateX(-50%);
+  background-color: rgba(237, 237, 237, 0.8);
+  color: black;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.service-box:hover .tooltip {
+  opacity: 1;
+  transform: translateY(-100%);
+}

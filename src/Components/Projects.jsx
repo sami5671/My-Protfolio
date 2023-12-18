@@ -1,53 +1,35 @@
-import project1 from "../assets/Images/project1.png";
-import project2 from "../assets/Images/project2.png";
-import project3 from "../assets/Images/project3.png";
-import project1a from "../assets/Images/project1a.png";
+import Marquee from "react-fast-marquee";
+import ProjectCard from "./ProjectCard";
+import { useEffect, useState } from "react";
 
 const Projects = () => {
-  return (
-    <div
-      id="Projects"
-      className="p-20 flex flex-col items-center justify-center"
-    >
-      <h1 className="text-[52px] font-semibold mb-20 leading-normal uppercase text-lime-500">
-        Projects
-      </h1>
+  const [projects, setProjects] = useState([]);
 
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-around gap-20 text-white">
-        <a href="https://gadget-harbor.web.app/">
-          <img
-            width={300}
-            className="flex items-center justify-center h-[170px]  p-1 rounded-3xl  border-2 border-lime-600 b_glow"
-            src={project1}
-            alt=""
-          />
-        </a>
-        <a href="https://luxaura-beauty-client.web.app/">
-          <img
-            width={300}
-            className="flex items-center justify-center h-[170px] p-1 rounded-3xl border-2 border-lime-600 b_glow"
-            src={project2}
-            alt=""
-          />
-        </a>
-        <a href="https://mermaid-hotel.web.app/">
-          <img
-            width={300}
-            className="flex items-center justify-center h-[170px] p-1 rounded-3xl  border-2 border-lime-600 b_glow"
-            src={project3}
-            alt=""
-          />
-        </a>
-        <a href="">
-          <img
-            width={300}
-            className="flex items-center justify-center h-[170px] p-1 rounded-3xl border-2 border-lime-600 b_glow"
-            src={project1a}
-            alt=""
-          />
-        </a>
-      </div>
-    </div>
+  // data fetching
+  useEffect(() => {
+    fetch("/public/main.json")
+      .then((res) => res.json())
+      .then((data) => setProjects(data));
+  }, []);
+  console.log(projects);
+  // data fetching
+  return (
+    <>
+      <section className="container mx-auto mt-12">
+        <div>
+          <h1 className="text-[52px] text-center font-semibold mb-20 leading-normal uppercase text-lime-500">
+            Projects
+          </h1>
+          <Marquee pauseOnHover="false" speed={40}>
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+              {projects.map((cards) => (
+                <ProjectCard key={cards.id} cards={cards}></ProjectCard>
+              ))}
+            </div>
+          </Marquee>
+        </div>
+      </section>
+    </>
   );
 };
 

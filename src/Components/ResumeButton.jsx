@@ -1,5 +1,5 @@
 import { FaFileDownload } from "react-icons/fa";
-import ResumePDF from "../assets/Images/resume.pdf";
+import ResumePDF from "../assets/Images/MD_SAMI_ALAM.pdf";
 import Swal from "sweetalert2";
 
 const ResumeButton = () => {
@@ -15,7 +15,7 @@ const ResumeButton = () => {
       if (result.isConfirmed) {
         const link = document.createElement("a");
         link.href = ResumePDF;
-        link.download = "resume.pdf";
+        link.download = "MD_SAMI_ALAM.pdf";
         link.click();
 
         Swal.fire({
@@ -27,6 +27,7 @@ const ResumeButton = () => {
         Swal.fire({
           title: "Cancelled",
           text: "Download cancelled",
+          color: "lime",
           icon: "info",
         });
       }

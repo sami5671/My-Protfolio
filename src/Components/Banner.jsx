@@ -15,6 +15,7 @@ const Banner = () => {
       duration: 750,
     });
   }, []);
+
   return (
     <section>
       <div className="lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col-reverse justify-between lg:gap-28 items-center">

@@ -1,6 +1,7 @@
-import img1 from "../assets/Images/project1.png";
-import img2 from "../assets/Images/project2.png";
-import img3 from "../assets/Images/project3.png";
+import img1p1 from "../assets/Images/img1P1.png";
+import img2p1 from "../assets/Images/img2P1.png";
+import img3p1 from "../assets/Images/img3P1.png";
+import img4p1 from "../assets/Images/img4P1.png";
 
 import { GiLaptop } from "react-icons/gi";
 import { FaGithub } from "react-icons/fa6";
@@ -19,16 +20,16 @@ const Projects = () => {
           <div className="p-4">
             <div className="carousel  lg:w-[600px] lg:h-[300px]">
               <div id="item1" className="carousel-item w-full">
-                <img src={img1} className="w-full rounded-lg shadow-2xl" />
+                <img src={img1p1} className="w-full rounded-lg shadow-2xl" />
               </div>
               <div id="item2" className="carousel-item w-full">
-                <img src={img1} className="w-full rounded-lg" />
+                <img src={img2p1} className="w-full rounded-lg" />
               </div>
               <div id="item3" className="carousel-item w-full">
-                <img src={img1} className="w-full rounded-lg" />
+                <img src={img3p1} className="w-full rounded-lg" />
               </div>
               <div id="item4" className="carousel-item w-full">
-                <img src={img1} className="w-full rounded-lg" />
+                <img src={img4p1} className="w-full rounded-lg" />
               </div>
             </div>
             <div className="flex justify-center w-full py-2 gap-2">
@@ -96,7 +97,7 @@ const Projects = () => {
             {/*  */}
             <div className="text-white mt-4 flex gap-1 lg:gap-4 mb-2">
               <a
-                href=""
+                href="https://gadget-harbor.web.app/"
                 className="bg-slate-400 px-4 py-1 text-white font-bold hover:bg-white hover:text-black rounded-full"
               >
                 <span className="flex gap-2 items-center">
@@ -105,7 +106,7 @@ const Projects = () => {
                 </span>
               </a>
               <a
-                href=""
+                href="https://github.com/sami5671/Gadget-Harbor-Client"
                 className="bg-green-700 px-4 py-1 text-white font-bold hover:bg-white hover:text-black rounded-full"
               >
                 <span className="flex gap-2 items-center">
@@ -114,7 +115,7 @@ const Projects = () => {
                 </span>
               </a>
               <a
-                href=""
+                href="https://github.com/sami5671/Gadget-Harbor-Server"
                 className="bg-orange-400 px-4 py-1 text-white font-bold hover:bg-white hover:text-black rounded-full"
               >
                 <span className="flex gap-2 items-center">
@@ -135,16 +136,16 @@ const Projects = () => {
           <div className="p-4">
             <div className="carousel  lg:w-[600px] lg:h-[300px]">
               <div id="item5" className="carousel-item w-full">
-                <img src={img2} className="w-full rounded-lg shadow-2xl" />
+                <img src={img4p1} className="w-full rounded-lg shadow-2xl" />
               </div>
               <div id="item6" className="carousel-item w-full">
-                <img src={img2} className="w-full rounded-lg" />
+                <img src={img4p1} className="w-full rounded-lg" />
               </div>
               <div id="item7" className="carousel-item w-full">
-                <img src={img2} className="w-full rounded-lg" />
+                <img src={img4p1} className="w-full rounded-lg" />
               </div>
               <div id="item8" className="carousel-item w-full">
-                <img src={img2} className="w-full rounded-lg" />
+                <img src={img4p1} className="w-full rounded-lg" />
               </div>
             </div>
             <div className="flex justify-center w-full py-2 gap-2">

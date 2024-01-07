@@ -51,7 +51,7 @@ const Navbar = () => {
           {/* <a href="/">
             <FaDollarSign className="font-bold text-3xl" />
           </a> */}
-          <span className="mr-12 lg:px-28">
+          <span className="mr-12 lg:px-36">
             <ResumeButton></ResumeButton>
           </span>
         </div>

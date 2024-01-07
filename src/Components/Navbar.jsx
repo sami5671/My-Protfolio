@@ -4,6 +4,7 @@ import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 import logo from "../assets/Images/logo1.jpg";
 import ResumeButton from "./ResumeButton";
+
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => {

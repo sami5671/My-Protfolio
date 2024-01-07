@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
-import logo from "../assets/Images/logo1.jpg";
+// import logo from "../assets/Images/logo1.jpg";
 import ResumeButton from "./ResumeButton";
 
 const Navbar = () => {
@@ -19,11 +19,11 @@ const Navbar = () => {
               Home
             </li>
           </Link>
-          <Link spy={true} smooth={true} to="About">
+          {/* <Link spy={true} smooth={true} to="About">
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded glow">
               About
             </li>
-          </Link>
+          </Link> */}
           <Link spy={true} smooth={true} to="Services">
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded glow">
               Services
@@ -62,11 +62,11 @@ const Navbar = () => {
                   Home
                 </li>
               </Link>
-              <Link spy={true} smooth={true} to="About">
+              {/* <Link spy={true} smooth={true} to="About">
                 <li className="hover:text-lime-400 transition border-b-2 border-slate-900 hover:border-lime-400 cursor-pointer ">
                   About
                 </li>
-              </Link>
+              </Link> */}
               <Link spy={true} smooth={true} to="Services">
                 <li className="hover:text-lime-400 transition border-b-2 border-slate-900 hover:border-lime-400 cursor-pointer ">
                   Services

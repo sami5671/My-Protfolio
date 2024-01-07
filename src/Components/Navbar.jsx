@@ -4,6 +4,7 @@ import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 // import logo from "../assets/Images/logo1.jpg";
 import ResumeButton from "./ResumeButton";
+// import { FaDollarSign } from "react-icons/fa6";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -47,9 +48,9 @@ const Navbar = () => {
     <nav>
       <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 border-b border-slate-800">
         <div className="flex items-center flex-1">
-          {/* <span>
-            <img src={logo} height={30} width={30} alt="" />
-          </span> */}
+          {/* <a href="/">
+            <FaDollarSign className="font-bold text-3xl" />
+          </a> */}
           <span className="mr-12 lg:px-28">
             <ResumeButton></ResumeButton>
           </span>

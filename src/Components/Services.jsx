@@ -17,7 +17,7 @@ const Services = () => {
     <div
       data-aos="fade-right"
       id="Services"
-      className="p-20 flex flex-col items-center justify-center uppercase"
+      className="p-2 flex flex-col items-center justify-center uppercase"
     >
       <h1 className="text-[52px] font-semibold mb-20 leading-normal uppercase text-lime-500">
         Services

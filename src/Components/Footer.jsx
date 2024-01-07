@@ -42,7 +42,10 @@ const Footer = () => {
             >
               <FaLinkedin className="text-[26px]  cursor-pointer"></FaLinkedin>
             </a>
-            <a className="text-lime-500 hover:text-white rounded-full glow p-2">
+            <a
+              href="https://www.instagram.com/samialam5671/"
+              className="text-lime-500 hover:text-white rounded-full glow p-2"
+            >
               <FaInstagramSquare className="text-[26px]  cursor-pointer"></FaInstagramSquare>
             </a>
           </div>

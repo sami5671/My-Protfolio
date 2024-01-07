@@ -6,6 +6,7 @@ import Projects from "./Components/Projects";
 import Services from "./Components/Services";
 import { RotatingTriangles } from "react-loader-spinner";
 import Footer from "./Components/Footer";
+import ParticleBg from "./Components/Extra/ParticleBg";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -30,6 +31,7 @@ const App = () => {
         </div>
       ) : (
         <div className="bg-gray-950">
+          <ParticleBg />
           <Navbar></Navbar>
           <Banner></Banner>
           <Services></Services>

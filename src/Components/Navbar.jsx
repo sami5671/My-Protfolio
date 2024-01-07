@@ -47,9 +47,9 @@ const Navbar = () => {
     <nav>
       <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 border-b border-slate-800">
         <div className="flex items-center flex-1">
-          <span>
+          {/* <span>
             <img src={logo} height={30} width={30} alt="" />
-          </span>
+          </span> */}
           <span className="mr-12 lg:px-28">
             <ResumeButton></ResumeButton>
           </span>

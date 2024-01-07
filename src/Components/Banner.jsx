@@ -56,7 +56,7 @@ const Banner = () => {
                   <FaLinkedin className="text-[28px]" />
                 </a>
                 <a
-                  href=""
+                  href="https://www.instagram.com/samialam5671/"
                   className="text-lime-500 hover:text-white rounded-full glow p-2"
                 >
                   <FaInstagramSquare className="text-[28px]" />

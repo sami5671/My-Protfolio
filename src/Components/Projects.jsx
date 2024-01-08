@@ -3,6 +3,12 @@ import img2p1 from "../assets/Images/img2P1.png";
 import img3p1 from "../assets/Images/img3P1.png";
 import img4p1 from "../assets/Images/img4P1.png";
 
+import img1p2 from "../assets/Images/img1P2.png";
+import img2p2 from "../assets/Images/img2P2.png";
+import img3p2 from "../assets/Images/img3P2.png";
+import img4p2 from "../assets/Images/img4P2.png";
+import img5p2 from "../assets/Images/img5P2.png";
+
 import { GiLaptop } from "react-icons/gi";
 import { FaGithub } from "react-icons/fa6";
 
@@ -134,18 +140,21 @@ const Projects = () => {
         <div className="card mt-24 px-3 flex flex-col lg:flex-row bg-slate-800 shadow-xl">
           {/* ----carosel---- */}
           <div className="p-4">
-            <div className="carousel  lg:w-[600px] lg:h-[300px]">
+            <div className="carousel lg:w-[600px] lg:h-[300px]">
               <div id="item5" className="carousel-item w-full">
-                <img src={img4p1} className="w-full rounded-lg shadow-2xl" />
+                <img src={img1p2} className="w-full rounded-lg shadow-2xl" />
               </div>
               <div id="item6" className="carousel-item w-full">
-                <img src={img4p1} className="w-full rounded-lg" />
+                <img src={img2p2} className="w-full rounded-lg" />
               </div>
               <div id="item7" className="carousel-item w-full">
-                <img src={img4p1} className="w-full rounded-lg" />
+                <img src={img3p2} className="w-full rounded-lg" />
               </div>
               <div id="item8" className="carousel-item w-full">
-                <img src={img4p1} className="w-full rounded-lg" />
+                <img src={img4p2} className="w-full rounded-lg" />
+              </div>
+              <div id="item9" className="carousel-item w-full">
+                <img src={img5p2} className="w-full rounded-lg" />
               </div>
             </div>
             <div className="flex justify-center w-full py-2 gap-2">
@@ -160,6 +169,9 @@ const Projects = () => {
               </a>
               <a href="#item8" className="btn btn-xs">
                 4
+              </a>
+              <a href="#item9" className="btn btn-xs">
+                5
               </a>
             </div>
           </div>
@@ -213,7 +225,7 @@ const Projects = () => {
             {/*  */}
             <div className="text-white mt-4 flex gap-1 lg:gap-4 mb-2">
               <a
-                href=""
+                href="https://mermaid-hotel.web.app/"
                 className="bg-slate-400 px-4 py-1 text-white font-bold hover:bg-white hover:text-black rounded-full"
               >
                 <span className="flex gap-2 items-center">
@@ -222,7 +234,7 @@ const Projects = () => {
                 </span>
               </a>
               <a
-                href=""
+                href="https://github.com/sami5671/Mermaid-Pearl-Client"
                 className="bg-green-700 px-4 py-1 text-white font-bold hover:bg-white hover:text-black rounded-full"
               >
                 <span className="flex gap-2 items-center">
@@ -231,7 +243,7 @@ const Projects = () => {
                 </span>
               </a>
               <a
-                href=""
+                href="https://github.com/sami5671/Mermaid-Pearl-Server"
                 className="bg-orange-400 px-4 py-1 text-white font-bold hover:bg-white hover:text-black rounded-full"
               >
                 <span className="flex gap-2 items-center">
@@ -245,6 +257,19 @@ const Projects = () => {
           {/* ====== */}
         </div>
         {/* ---Project 2--- */}
+
+        {/* button for show more projects gitHub*/}
+        <div className="text-center mt-12">
+          <a href="https://github.com/sami5671">
+            <button className="px-4 py-2 font-bold bg-lime-600 rounded-full text-white hover:bg-white hover:text-black">
+              <span className="flex gap-2 items-center">
+                <FaGithub className="text-xl" />
+                Show More On
+              </span>
+            </button>
+          </a>
+        </div>
+        {/* button for show more projects gitHub*/}
       </section>
     </>
   );

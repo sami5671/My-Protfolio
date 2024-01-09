@@ -61,8 +61,8 @@ const ParticleBg = () => {
         detectsOn: "window",
         events: {
           onClick: {
-            enable: true,
-            mode: "push",
+            enable: false,
+            mode: [],
           },
           onDiv: {
             selectors: [],
@@ -71,8 +71,8 @@ const ParticleBg = () => {
             type: "circle",
           },
           onHover: {
-            enable: true,
-            mode: "repulse",
+            enable: false,
+            mode: [],
             parallax: {
               enable: false,
               force: 2,
@@ -105,12 +105,6 @@ const ParticleBg = () => {
             distance: 200,
             duration: 0.4,
             mix: false,
-            divs: {
-              distance: 200,
-              duration: 0.4,
-              mix: false,
-              selectors: [],
-            },
           },
           connect: {
             distance: 80,
@@ -142,15 +136,6 @@ const ParticleBg = () => {
             speed: 1,
             maxSpeed: 50,
             easing: "ease-out-quad",
-            divs: {
-              distance: 200,
-              duration: 0.4,
-              factor: 100,
-              speed: 1,
-              maxSpeed: 50,
-              easing: "ease-out-quad",
-              selectors: [],
-            },
           },
           slow: {
             factor: 3,
@@ -208,11 +193,11 @@ const ParticleBg = () => {
           },
         },
         color: {
-          value: "#ff0000",
+          value: "#fff",
           animation: {
             h: {
               count: 0,
-              enable: true,
+              enable: false,
               speed: 20,
               decay: 0,
               delay: 0,
@@ -245,11 +230,44 @@ const ParticleBg = () => {
           options: {},
           type: [],
         },
-        groups: {},
+        groups: {
+          z5000: {
+            number: {
+              value: 70,
+            },
+            zIndex: {
+              value: 50,
+            },
+          },
+          z7500: {
+            number: {
+              value: 30,
+            },
+            zIndex: {
+              value: 75,
+            },
+          },
+          z2500: {
+            number: {
+              value: 50,
+            },
+            zIndex: {
+              value: 25,
+            },
+          },
+          z1000: {
+            number: {
+              value: 40,
+            },
+            zIndex: {
+              value: 10,
+            },
+          },
+        },
         move: {
           angle: {
             offset: 0,
-            value: 90,
+            value: 10,
           },
           attract: {
             distance: 200,
@@ -267,7 +285,7 @@ const ParticleBg = () => {
           },
           decay: 0,
           distance: {},
-          direction: "none",
+          direction: "right",
           drift: 0,
           enable: true,
           gravity: {
@@ -293,7 +311,7 @@ const ParticleBg = () => {
           },
           random: false,
           size: false,
-          speed: 6,
+          speed: 5,
           spin: {
             acceleration: 0,
             enable: false,
@@ -309,7 +327,7 @@ const ParticleBg = () => {
         },
         number: {
           density: {
-            enable: true,
+            enable: false,
             width: 1920,
             height: 1080,
           },
@@ -317,10 +335,10 @@ const ParticleBg = () => {
             mode: "delete",
             value: 0,
           },
-          value: 80,
+          value: 200,
         },
         opacity: {
-          value: 0.5,
+          value: 1,
           animation: {
             count: 0,
             enable: false,
@@ -352,10 +370,7 @@ const ParticleBg = () => {
           type: "circle",
         },
         size: {
-          value: {
-            min: 1,
-            max: 3,
-          },
+          value: 3,
           animation: {
             count: 0,
             enable: false,
@@ -372,8 +387,8 @@ const ParticleBg = () => {
           width: 0,
         },
         zIndex: {
-          value: 0,
-          opacityRate: 1,
+          value: 5,
+          opacityRate: 0.5,
           sizeRate: 1,
           velocityRate: 1,
         },
@@ -480,13 +495,13 @@ const ParticleBg = () => {
         links: {
           blink: false,
           color: {
-            value: "#ffffff",
+            value: "#fff",
           },
           consent: false,
-          distance: 150,
-          enable: true,
+          distance: 100,
+          enable: false,
           frequency: 1,
-          opacity: 0.4,
+          opacity: 1,
           shadow: {
             blur: 5,
             color: {
@@ -517,7 +532,73 @@ const ParticleBg = () => {
       style: {},
       themes: [],
       zLayers: 100,
-      name: "Basic",
+      name: "Among Us",
+      emitters: {
+        autoPlay: true,
+        fill: true,
+        life: {
+          wait: false,
+        },
+        rate: {
+          quantity: 1,
+          delay: 7,
+        },
+        shape: {
+          options: {},
+          replace: {
+            color: false,
+            opacity: false,
+          },
+          type: "square",
+        },
+        startCount: 0,
+        size: {
+          mode: "percent",
+          height: 0,
+          width: 0,
+        },
+        particles: {
+          shape: {
+            type: "images",
+            options: {
+              images: {
+                src: "https://particles.js.org/images/cyan_amongus.png",
+                width: 500,
+                height: 634,
+              },
+            },
+          },
+          size: {
+            value: 40,
+          },
+          move: {
+            speed: 10,
+            outModes: {
+              default: "none",
+              right: "destroy",
+            },
+            straight: true,
+          },
+          zIndex: {
+            value: 0,
+          },
+          rotate: {
+            value: {
+              min: 0,
+              max: 360,
+            },
+            animation: {
+              enable: true,
+              speed: 10,
+              sync: true,
+            },
+          },
+        },
+        position: {
+          x: -5,
+          y: 55,
+        },
+      },
       motion: {
         disable: false,
         reduce: {
